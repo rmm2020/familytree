@@ -6,7 +6,7 @@ Created on Tue Mar  2 10:38:15 2021
 """
 
 
-filedirectory = 'C:\\Users\\Rachel\\Documents\\GitHub\\familytree'
+filedirectory = 'C:\\Users\\Rachel\\Google Drive\\Python Scripts\\Family Tree'
 father1name = 'Father Name'
 mother1name = 'Mother Name'
 person1name = 'Rachel Molaro'
