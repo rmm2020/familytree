@@ -7,6 +7,8 @@ This project was made for the purpose of visualizing my own family tree so that 
 
 ![my tree](/ExampleImages/Example_mytree.png)
 
+![my tree2](/ExampleImages/Example_mytree2.png)
+
 ![harry potter tree](/ExampleImages/Example_variations2.png)
 
 ### Family Tree Structure
