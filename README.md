@@ -58,3 +58,32 @@ It could be possible in the future to add Gedcom (standard  genealogy file type)
 * Font, Background, Nameplate Frames, and Ancestor Text Frames can be modified
 * Place all photos, text, and frames onto canvas (using re-size and text sizing adjustments as needed)
 
+## Other Graphics/Charts
+The other notebook file FamilyTree_Charts has code to create several genealogy graphics. The descriptions of the code are commented in the code itself.
+
+### Data
+Data is read from another excel file with a different structure (Example below). Most of the columns are straightforward. 
+* The movement column (used to generate traces on the maps) is entered as follows separated by ';' semicolons: Location 1; Location 2; Year Moved
+  Multiple movements by one person can be entered using ' %% ' to separate, for example: Seattle, WA; Phoenix, AZ; 1997 %% Phoenix, AZ; Toronto, Ontario, Canada; 2008
+* The occupation column (used for the occupation chart) is entered as follows separated by '%': Occupation Heading % Occupation description
+  The occupation heading must match the headings used in the dictionary in the code. The description can be whatever you want. If you want to force a line break on the             description it should be done with '$$' symbol. 
+  Example1: Human Services % Clergy
+  Example2: Health Science % Nurse$$4 Children
+  Example3: Manufacturing % Machinist$$Assembly Line Worker
+
+
+### Genetic Ancestry Pie Chart
+
+
+### Birth Location by Generation
+
+### Occupation by Generation
+
+### Age at Marriage by Generation
+
+### Years Lived by Generation
+
+### Maps Showing Ancestor Movement and Origins
+
+
+  
