@@ -64,10 +64,8 @@ It could be possible in the future to add Gedcom (standard  genealogy file type)
 ![familydata2](/ExampleImages/ExampleData2.PNG)
 
 ### Code outline
-* Read Family Data
-  Read family database from excel file into pandas database. 
-* Person Class
-  Person Class created that will store person information (e.g. name, birthyear) and family information (e.g. father, mother, siblings, partners). 
+* Read family database from excel file into pandas database. 
+* Person Class created that will store person information (e.g. name, birthyear) and family information (e.g. father, mother, siblings, partners). 
 
   Later, information relating each person to the “Core Person” the tree is built off of (e.g. in core family line, generation level vs. Core Person) and picture placement on       image (e.g. pic x position, pic width) will be modified as well. 
 
@@ -97,6 +95,7 @@ Data is read from another excel file with a different structure (Example below).
 
 ![ancestordata](/ExampleImages/ExampleData3.PNG)
 
+* The genup column has a number listing the numer of generations up from the center that the ancestor is. For example, for the graphics for my daughter, she is listed as           genup=0, my husband and I are both genup=1, my parents are genup=2 and so on. This is the main number that the data gets filtered by for most of the charts as you loop through   the generations. 
 * The movement column (used to generate traces on the maps) is entered as follows separated by ';' semicolons: Location 1; Location 2; Year Moved
   Multiple movements by one person can be entered using ' %% ' to separate, for example: Seattle, WA; Phoenix, AZ; 1997 %% Phoenix, AZ; Toronto, Ontario, Canada; 2008
 * The occupation column (used for the occupation chart) is entered as follows separated by '%': Occupation Heading % Occupation description
