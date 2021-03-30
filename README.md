@@ -39,6 +39,21 @@ Config.py file contains user input configuration dictionary that will help build
 User inputs described in more detail in the comments in the code, but they include:
 Selecting person0 (Core Person) to base the tree on and selecting the number of generations vertically up and down to include and degrees sideways to include
 
+Examples of vertical/sideways degrees based on relationship to self
+
+| Relation           | Vertical | Sideways |
+| --------           |:--------:|:--------:|
+| Self               | 0        | 0        |
+| Brother/Sister     | 0        | 1        |
+| 1st Cousin         | 0        | 2        |
+| Son/Daughter       | -1       | 0        |
+| Nephew/Niece       | -1       | 1        |
+| Dad/Mom            | 1        | 0        |
+| Uncle/Aunt         | 1        | 1        |
+| Dad's Cousin       | 1        | 2        |
+| Grandpa/Grandma    | 2        | 0        |
+| Grandpa's/Cousin   | 2        | 2        |
+
 ![vertside](/ExampleImages/Example_vert-side.png)
 
 Optional exclusion list or inclusion list (I use the inclusion list for some step-children that wouldn’t show up otherwise, since they are not blood related to the person in the tree). People in inclusion list still need a parent (or parent of partner that is also included) to be included in the tree in order to be sorted properly.
